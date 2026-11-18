@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover street food and local vendors in Bayawan City, Negros Oriental. Support local flavors and small businesses."
+    />
+    <meta name="theme-color" content="#171313" />
+    <meta name="author" content="Cristine Mae Alson" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:site_name" content="Street Foods | Bayawan City" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Street Foods | Bayawan City – Local bites, big smiles"
+    />
+    <meta
+      property="og:description"
+      content="Discover street food and local vendors in Bayawan City, Negros Oriental. Support local flavors and small businesses."
+    />
+    <meta property="og:image" content="images/Barbecue.webp" />
+    <meta property="og:locale" content="en_PH" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Street Foods | Bayawan City</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Street Foods home">
+        <img src="images/logo.svg" alt="Street Foods Bayawan City logo" />
+      </a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a><a href="#foods">Food Guide</a
+        ><a href="#vendors">Vendors</a><a href="#gallery">Gallery</a
+        ><a href="#map">Map</a><a href="#about">About</a
+        ><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <label class="header-search"
+          ><span>⌕</span
+          ><input
+            id="headerSearch"
+            type="search"
+            placeholder="Search food..."
+            aria-label="Search food"
+        /></label>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light and dark theme"
+        >
+          ☼
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <noscript>
+        <p class="noscript-note">
+          Please enable JavaScript to browse the food guide, vendor directory,
+          and interactive map.
+        </p>
+      </noscript>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> A taste of our community</span>
+          <h1>Street Foods<br /><em>of Bayawan City</em></h1>
+          <p class="hero-lead">
+            Discover, support, and enjoy the best street foods from our local
+            vendors.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#foods"
+              >Explore Foods <span>↗</span></a
+            ><a class="btn btn-glass" href="#vendors">Meet Our Vendors</a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon">✦</span
+            ><span
+              ><strong>Local bites. Big smiles.</strong
+              ><small>Celebrating the flavors of Bayawan.</small></span
+            >
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-photo">
+            <img src="images/Bayawan City Boulevard bazaar.jpg" alt="Bayawan City Boulevard bazaar" loading="eager" />
+          </div>
+          <div class="hero-glass-card">
+            <span class="mini-label">MADE FOR FOOD LOVERS</span
+            ><strong>Support local.<br /><em>Eat local.</em></strong>
+            <p>Every bite helps our neighborhood vendors thrive.</p>
+            <div class="hero-stats">
+              <span><b>13</b><small>Food picks</small></span
+              ><span><b>04</b><small>Categories</small></span
+              ><span><b>100%</b><small>Local spirit</small></span>
+            </div>
+          </div>
+          <div class="floating-sticker">
+            Taste the<br />Bayawan<br />flavor! <span>♥</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-benefits section-wrap">
+        <article class="benefit glass reveal"><span class="benefit-icon">⌕</span>
+          <div>
+            <h3>Find vendors easily</h3>
+            <p>Explore food spots and local favorites.</p>
+          </div>
+        </article>
+        <article class="benefit glass reveal" style="--reveal-delay:90ms"><span class="benefit-icon">✦</span>
+          <div>
+            <h3>Discover new flavors</h3>
+            <p>Find snacks, grilled bites, and treats.</p>
+          </div>
+        </article>
+        <article class="benefit glass reveal" style="--reveal-delay:180ms"><span class="benefit-icon">♡</span>
+          <div>
+            <h3>Support local sellers</h3>
+            <p>Help Bayawan's small businesses grow.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-wrap section-block" id="foods">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">THE FOOD GUIDE</span>
+            <h2>Find your next <em>favorite bite.</em></h2>
+            <p>Browse street-food favorites from vendors across Bayawan City.</p>
+          </div>
+          <a class="text-link" href="#foods">Explore the menu <span>↗</span></a>
+        </div>
+        <div class="food-tools">
+          <div class="filter-pills" id="categoryFilters">
+            <button class="filter-pill selected" data-category="All">
+              All foods</button
+            ><button class="filter-pill" data-category="Grilled">Grilled</button
+            ><button class="filter-pill" data-category="Snacks">Snacks</button
+            ><button class="filter-pill" data-category="Desserts">
+              Desserts</button
+            ><button class="filter-pill" data-category="Drinks">Drinks</button>
+          </div>
+          <label class="search-box"
+            ><span>⌕</span
+            ><input
+              id="foodSearch"
+              type="search"
+              placeholder="Search food or vendor..."
+          /></label>
+        </div>
+        <div class="food-grid" id="foodGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>
+          No matching food found. Try another search or category.
+        </p>
+      </section>
+
+      <section class="vendor-section section-block" id="vendors">
+        <div class="section-wrap">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">MEET THE MAKERS</span>
+              <h2>Local vendors, <em>local pride.</em></h2>
+              <p>
+                Get to know the people behind the delicious street-food
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="vendor-grid" id="vendorGrid"></div>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">A FEAST FOR THE EYES</span>
+            <h2>Fresh from the <em>street.</em></h2>
+            <p>
+              A little photo inspiration for the flavors and energy of local
+              food culture.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button
+            class="gallery-item gallery-tall reveal"
+            data-full="images/Bayawan City Boulevard bazaar.jpg"
+          >
+            <img
+              src="images/Bayawan City Boulevard bazaar.jpg"
+              alt="Stalls at the Bayawan City Boulevard bazaar"
+              loading="lazy"
+              decoding="async"
+            /><span>Boulevard bazaar ↗</span>
+          </button>
+          <button
+            class="gallery-item reveal"
+            style="--reveal-delay:90ms"
+            data-full="images/Hayahay Square bayawan city.jpg"
+          >
+            <img
+              src="images/Hayahay Square bayawan city.jpg"
+              alt="Hayahay Square in Bayawan City"
+              loading="lazy"
+              decoding="async"
+            /><span>Hayahay Square ↗</span>
+          </button>
+          <button
+            class="gallery-item reveal"
+            style="--reveal-delay:180ms"
+            data-full="images/Bayawan City Public Market.webp"
+          >
+            <img
+              src="images/Bayawan City Public Market.webp"
+              alt="Bayawan City Public Market"
+              loading="lazy"
+              decoding="async"
+            /><span>Public market finds ↗</span>
+          </button>
+          <button
+            class="gallery-item reveal"
+            style="--reveal-delay:270ms"
+            data-full="images/New Paonay Market.jpg"
+          >
+            <img
+              src="images/New Paonay Market.jpg"
+              alt="New Paonay Market in Bayawan City"
+              loading="lazy"
+              decoding="async"
+            /><span>New Paonay Market ↗</span>
+          </button>
+          <button
+            class="gallery-item reveal"
+            style="--reveal-delay:360ms"
+            data-full="images/Bayawan City Boulevard.jpg"
+          >
+            <img
+              src="images/Bayawan City Boulevard.jpg"
+              alt="Bayawan City Boulevard"
+              loading="lazy"
+              decoding="async"
+            /><span>Bayawan City Boulevard ↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block map-section" id="map">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">WHERE TO FIND US</span>
+            <h2>Street-food spots across <em>Bayawan City.</em></h2>
+            <p>
+              From the boulevard to the markets, here are the hubs where
+              Bayawan's street-food vendors set up shop.
+            </p>
+          </div>
+          <a
+            class="text-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Bayawan%20City%2C%20Negros%20Oriental"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open in Google Maps <span>↗</span></a
+          >
+        </div>
+        <div class="map-layout">
+          <div class="map-card glass reveal">
+            <div
+              class="map-container"
+              id="cityMap"
+              role="application"
+              aria-label="Interactive map of street-food hubs in Bayawan City"
+            ></div>
+          </div>
+          <aside class="map-side glass reveal" style="--reveal-delay:130ms">
+            <div class="map-side-head">
+              <span class="eyebrow">FOOD HUBS</span>
+              <h3>Where to find your favorite bites</h3>
+            </div>
+            <ul class="spot-list">
+              <li class="spot-item">
+                <span class="spot-num">01</span
+                ><div
+                  ><strong>Bayawan City Boulevard</strong
+                  ><small>BBQ, isaw, and the weekend bazaar</small></div
+                ><a
+                  class="spot-dir"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Bayawan%20City%20Boulevard%2C%20Bayawan%20City%2C%20Negros%20Oriental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to Bayawan City Boulevard"
+                  >→</a
+                >
+              </li>
+              <li class="spot-item">
+                <span class="spot-num">02</span
+                ><div
+                  ><strong>Bayawan City Public Market</strong
+                  ><small>Lugaw, snacks, and fresh produce</small></div
+                ><a
+                  class="spot-dir"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Bayawan%20City%20Public%20Market%2C%20Bayawan%20City%2C%20Negros%20Oriental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to Bayawan City Public Market"
+                  >→</a
+                >
+              </li>
+              <li class="spot-item">
+                <span class="spot-num">03</span
+                ><div
+                  ><strong>Hayahay Square</strong
+                  ><small>Food park and merienda stalls</small></div
+                ><a
+                  class="spot-dir"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Hayahay%20Square%2C%20Bayawan%20City%2C%20Negros%20Oriental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to Hayahay Square"
+                  >→</a
+                >
+              </li>
+              <li class="spot-item">
+                <span class="spot-num">04</span
+                ><div
+                  ><strong>New Paonay Market</strong
+                  ><small>Everyday street snacks and produce</small></div
+                ><a
+                  class="spot-dir"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=New%20Paonay%20Market%2C%20Bayawan%20City%2C%20Negros%20Oriental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to New Paonay Market"
+                  >→</a
+                >
+              </li>
+              <li class="spot-item">
+                <span class="spot-num">05</span
+                ><div
+                  ><strong>Bayawan City Plaza</strong
+                  ><small>Night market and city celebrations</small></div
+                ><a
+                  class="spot-dir"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Bayawan%20City%20Plaza%2C%20Bayawan%20City%2C%20Negros%20Oriental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to Bayawan City Plaza"
+                  >→</a
+                >
+              </li>
+            </ul>
+            <p class="map-note">
+              Pins on the map are approximate. Use the arrow on each spot for
+              turn-by-turn directions in Google Maps.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="about-section section-block" id="about">
+        <div class="section-wrap about-layout">
+          <div class="about-visual">
+            <div class="about-photo">
+              <img src="images/Bayawan City Public Market.webp" alt="Bayawan City public market street food scene" loading="lazy" />
+            </div>
+            <div class="about-stamp">
+              BAYAWAN<br /><b>♥</b><br />NEGROS ORIENTAL
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <span class="eyebrow">OUR COMMUNITY, OUR FLAVOR</span>
+            <h2>A platform made to<br /><em>celebrate local.</em></h2>
+            <p>
+              Street Foods – Bayawan City is a community-focused project created
+              to showcase street food and the hardworking local vendors of
+              Bayawan City, Negros Oriental. It aims to help people discover
+              local food businesses, promote small entrepreneurship, and
+              celebrate the flavors of the community.
+            </p>
+            <a class="btn btn-primary" href="#contact"
+              >Get in touch <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrap contact-section section-block" id="contact">
+        <div class="contact-card glass reveal">
+          <div>
+            <span class="eyebrow">LET'S CONNECT</span>
+            <h2>Love local food?<br /><em>Let's talk.</em></h2>
+            <p>
+              Have a suggestion, a vendor to feature, or feedback about this
+              project? Connect with the project owner.
+            </p>
+          </div>
+          <div class="contact-owner">
+            <div class="owner-avatar">CA</div>
+            <div>
+              <small>PROJECT OWNER</small><strong>Cristine Mae Alson</strong
+              ><a
+                href="https://www.facebook.com/cristinemae.alson"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit Facebook profile ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main section-wrap">
+        <div class="footer-col footer-brand-col">
+          <a href="#home" class="footer-brand"
+            ><img src="images/logo.svg" alt="Street Foods logo"
+          /></a>
+          <p>
+            Local bites. Big smiles. A celebration of Bayawan's street-food
+            community.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.facebook.com/cristinemae.alson"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Cristine's Facebook profile"
+              ><svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                ><path
+                  d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.4V4.8c-.6-.1-1.3-.2-2.1-.2-2.1 0-3.6 1.3-3.6 3.6V11H8.5v3H11v7h2.5z"
+                /></svg
+              ></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>EXPLORE</h4>
+          <a href="#foods">Food guide</a><a href="#vendors">Vendors</a
+          ><a href="#gallery">Gallery</a><a href="#map">Street-food map</a>
+        </nav>
+        <div class="footer-col">
+          <h4>POPULAR SPOTS</h4>
+          <a href="#map">City Boulevard</a><a href="#map">Public Market</a
+          ><a href="#map">Hayahay Square</a><a href="#map">New Paonay Market</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Street Foods – Bayawan City</span
+        ><span>Designed with ♥ by Cristine Mae Alson</span
+        ><a
+          href="https://www.facebook.com/cristinemae.alson"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Facebook ↗</a
+        >
+      </div>
+    </footer>
+
+    <dialog class="detail-modal" id="foodModal">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </dialog>
+    <dialog class="lightbox" id="lightbox">
+      <button class="modal-close" id="lightboxClose" aria-label="Close">
+        ×</button
+      ><img id="lightboxImage" alt="Expanded gallery image" />
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+    <script src="js/foods.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
